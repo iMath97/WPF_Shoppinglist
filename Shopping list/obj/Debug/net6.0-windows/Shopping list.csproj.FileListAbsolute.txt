@@ -1,0 +1,21 @@
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shopping list.exe
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shopping list.deps.json
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shopping list.runtimeconfig.json
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shopping list.dll
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shopping list.pdb
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.csproj.AssemblyReference.cache
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\MainWindow.g.cs
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\App.g.cs
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list_MarkupCompile.cache
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list_MarkupCompile.lref
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\MainWindow.baml
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.g.resources
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.GeneratedMSBuildEditorConfig.editorconfig
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.AssemblyInfoInputs.cache
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.AssemblyInfo.cs
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.csproj.CoreCompileInputs.cache
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.dll
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\refint\Shopping list.dll
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.pdb
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.genruntimeconfig.cache
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\ref\Shopping list.dll
