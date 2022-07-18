@@ -21,8 +21,6 @@ namespace Shopping_list
     public partial class MainWindow : Window
     {
         List<string> ShoppinglistItems = new List<string>();
-        ListBox listBox;
-        TextBox newItemBox;
 
         string selectedItem;
 
@@ -30,30 +28,28 @@ namespace Shopping_list
         {
             InitializeComponent();
 
-            listBox = this.ShoppingList;
-            newItemBox = this.newItem;
         }
 
         private void addItem(object sender, RoutedEventArgs e)
         {
-            listBox.Items.Add(newItemBox.Text);
+            this.ShoppingList.Items.Add(this.newItem.Text);
 
             newItem.Text = "";
         }
 
         private void removeItem(object sender, RoutedEventArgs e)
         {
-            listBox.Items.RemoveAt(listBox.Items.IndexOf(listBox.SelectedItem));
+            this.ShoppingList.Items.RemoveAt(this.ShoppingList.Items.IndexOf(this.ShoppingList.SelectedItem));
         }
 
         private void UpdateSelectedItem(object sender, MouseButtonEventArgs e)
         {
-            for (int i = 0; i < listBox.Items.Count; i++)
+            for (int i = 0; i < this.ShoppingList.Items.Count; i++)
             {
-                if(listBox.Items[i].ToString() == listBox.SelectedValue.ToString())
+                if(this.ShoppingList.Items[i].ToString() == this.ShoppingList.SelectedValue.ToString())
                 {
-                    selectedItem = listBox.Items[i].ToString();
-                    newItem.Text = listBox.Items[i].ToString();
+                    selectedItem = this.ShoppingList.Items[i].ToString();
+                    newItem.Text = this.ShoppingList.Items[i].ToString();
                     break;
                 }
             }
@@ -61,9 +57,9 @@ namespace Shopping_list
 
         private void editItem(object sender, RoutedEventArgs e)
         {
-            listBox.Items.RemoveAt(listBox.SelectedIndex);
+            this.ShoppingList.Items.RemoveAt(this.ShoppingList.SelectedIndex);
 
-            listBox.Items.Add(newItemBox.Text);
+            this.ShoppingList.Items.Add(this.newItem.Text);
 
             newItem.Text = "";
         }
