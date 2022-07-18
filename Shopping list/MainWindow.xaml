@@ -13,15 +13,24 @@
             <TextBlock FontSize="64" Foreground="#134371" HorizontalAlignment="Center" FontWeight="SemiBold">SHOPPING LIST</TextBlock>
         </StackPanel>
         <StackPanel Name="Body" Orientation="Vertical">
-            <ListBox Name="ShoppingList" HorizontalAlignment="Stretch" MouseDoubleClick="UpdateSelectedItem">
+            <ListBox Name="ShoppingList" HorizontalAlignment="Stretch" MouseDoubleClick="UpdateSelectedItem" Margin="10" MinHeight="250">
                 
             </ListBox>
-            <StackPanel Name="Form" Orientation="Horizontal" Margin="10">
-                <TextBox Name="newItem" Width="500" Margin="0 0 10 0"></TextBox>
-                <Button Click="addItem" Padding="5" Margin="0 0 10 0">Add item</Button>
-                <Button Click="editItem" Padding="5" Margin="0 0 10 0">Edit item</Button>
-                <Button Click="removeItem" Padding="5">Delete item</Button>
-            </StackPanel>
+            <Grid Name="Form" Margin="10 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBox Name="newItem" Width="500" Margin="0 0 10 0"  Padding="5"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Column="2">
+                    <Button Click="addItem" Padding="5" Margin="0 0 10 0">Add item</Button>
+                    <Button Click="editItem" Padding="5" Margin="0 0 10 0">Edit item</Button>
+                    <Button Click="removeItem" Padding="5" HorizontalAlignment="Right">Delete item</Button>
+                </StackPanel>
+            </Grid>
         </StackPanel>
     </StackPanel>
 </Window>
