@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZgsJqeQPCxtfcQ/SKaB1wYfU56PM8/Xwn/y04WdCRUVcdAUhcW2X9hky1Ct+K8ON7VG/NHCTEDcqj2ZLu+Xetg==",
+  "dgSpecHash": "8AKZBbYdxsj4Vlugc435+obP7T4pr3ohMFZV9KlnJmhgi/YowD8mBBUJnfm1ssbz+a4ndAom8U5N6Hv411p+qw==",
   "success": true,
   "projectFilePath": "A:\\Personal\\Appdev\\Shopping list\\Shopping list\\Shopping list.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\camus\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

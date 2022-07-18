@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,25 +24,56 @@ namespace Shopping_list
     public partial class MainWindow : Window
     {
         List<string> ShoppinglistItems = new List<string>();
+        const string filepath = "Shoppinglist.json";
 
         string selectedItem;
 
         public MainWindow()
         {
             InitializeComponent();
+            ReadData();
+        }
 
+        public void ReadData()
+        {
+            string jsonString = File.ReadAllText(filepath);
+
+            ShoppinglistItems = JsonConvert.DeserializeObject<List<string>>(jsonString);
+
+            InitData();
+        }
+
+        public void InitData()
+        {
+            foreach (string item in ShoppinglistItems)
+            {
+                this.ShoppingList.Items.Add(item);
+            }
+        }
+
+        public void WriteData()
+        {
+            string jsonString = JsonConvert.SerializeObject(ShoppinglistItems, Formatting.Indented);
+
+            File.WriteAllText(filepath, jsonString);
         }
 
         private void addItem(object sender, RoutedEventArgs e)
         {
             this.ShoppingList.Items.Add(this.newItem.Text);
+            ShoppinglistItems.Add(this.newItem.Text);
 
             newItem.Text = "";
+
+            WriteData();
         }
 
         private void removeItem(object sender, RoutedEventArgs e)
         {
+            ShoppinglistItems.RemoveAt(this.ShoppingList.Items.IndexOf(this.ShoppingList.SelectedItem));
             this.ShoppingList.Items.RemoveAt(this.ShoppingList.Items.IndexOf(this.ShoppingList.SelectedItem));
+
+            WriteData();
         }
 
         private void UpdateSelectedItem(object sender, MouseButtonEventArgs e)
@@ -57,11 +91,12 @@ namespace Shopping_list
 
         private void editItem(object sender, RoutedEventArgs e)
         {
-            this.ShoppingList.Items.RemoveAt(this.ShoppingList.SelectedIndex);
-
-            this.ShoppingList.Items.Add(this.newItem.Text);
+            ShoppinglistItems[this.ShoppingList.SelectedIndex] = this.newItem.Text;
+            this.ShoppingList.Items[this.ShoppingList.SelectedIndex] = this.newItem.Text;
 
             newItem.Text = "";
+
+            WriteData();
         }
     }
 }

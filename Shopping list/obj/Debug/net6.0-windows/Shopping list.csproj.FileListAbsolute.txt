@@ -19,3 +19,7 @@ A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\refint\S
 A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.pdb
 A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.genruntimeconfig.cache
 A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\ref\Shopping list.dll
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Shoppinglist.json
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list_Content.g.cs
+A:\Personal\Appdev\Shopping list\Shopping list\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+A:\Personal\Appdev\Shopping list\Shopping list\obj\Debug\net6.0-windows\Shopping list.csproj.CopyComplete

@@ -16,11 +16,11 @@
             <ListBox Name="ShoppingList" HorizontalAlignment="Stretch" MouseDoubleClick="UpdateSelectedItem">
                 
             </ListBox>
-            <StackPanel Name="Form" Orientation="Horizontal">
-                <TextBox Name="newItem" Width="600"></TextBox>
-                <Button Click="addItem">Add item</Button>
-                <Button Click="editItem">Edit item</Button>
-                <Button Click="removeItem">Delete item</Button>
+            <StackPanel Name="Form" Orientation="Horizontal" Margin="10">
+                <TextBox Name="newItem" Width="500" Margin="0 0 10 0"></TextBox>
+                <Button Click="addItem" Padding="5" Margin="0 0 10 0">Add item</Button>
+                <Button Click="editItem" Padding="5" Margin="0 0 10 0">Edit item</Button>
+                <Button Click="removeItem" Padding="5">Delete item</Button>
             </StackPanel>
         </StackPanel>
     </StackPanel>
